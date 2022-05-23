@@ -657,6 +657,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .portfolio-btn:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-btn.current {
@@ -781,7 +782,8 @@ transition: 250ms;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms, translate 250ms;
+    transition: opacity 250ms, translate 250px;
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal {
@@ -794,6 +796,8 @@ min-height: 581px;
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+
+
 }
 
 .modal-button-icon {
